@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Full-Stack Developer & e-Commerece Expert</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/portfolio-logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#values">Values</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="d-none d-lg-block"><a href="#contact" class="nav-link nav-cta">Let's Talk <i
+            class="fa-solid fa-arrow-right ms-1"></i></a></div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-blob blob1"></div>
+    <div class="hero-blob blob2"></div>
+    <div class="hero-blob blob3"></div>
+    <div class="container position-relative" style="z-index:2">
+      <div class="row align-items-center d-flex g-5">
+        <div class="col-lg-7">
+          <div class="hero-tag d-lg-none"><span></span>Available for Freelance Work</div>
+          <p class="hero-intro">I am Muhammad AbdulRehman, a</p>
+          <h1 class="hero-title">Full-Stack<br><span class="gradient-text">Developer &amp;</span><br>E-commerce Expert</h1>
+          <p class="hero-subtitle">Building digital products with Bootstrap, JavaScript, PHP
+            &amp; Laravel — specialized in Shopify and WordPress e-commerce solutions.</p>
+          <div class="hero-badges">
+            <span class="badge-pill"><i class="fa-solid fa-graduation-cap"></i> ICS — Computer Science</span>
+            <span class="badge-pill"><i class="fa-solid fa-code"></i> PHP Developer</span>
+            <span class="badge-pill"><i class="fa-solid fa-store"></i> Shopify Expert</span>
+            <span class="badge-pill"><i class="fa-solid fa-cart-shopping"></i> Ecommerce Expert</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary-custom"><i class="fa-solid fa-rocket"></i> View Work</a>
+            <a href="#contact" class="btn-outline-custom"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Projects Done</div>
+            </div>
+            <div>
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Niche Clients</div>
+            </div>
+            <div>
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Years Journey</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-visual align-items-start d-flex">
+            <!-- <div class="hero-tag d-none d-lg-inline-flex"><span></span>Available for Freelance Work</div> -->
+            <div class="floating-tag ftag1"><i class="fa-solid fa-code" style="color:#777BB4"></i> PHP</div>
+            <div class="floating-tag ftag2"><i class="fa-solid fa-cart-shopping" style="color:var(--primary)"></i> Ecommerce</div>
+            <div class="hero-card">
+              <div class="avatar-ring"><i class="fa-solid fa-code"></i></div>
+              <div class="text-center mb-3">
+                <h5 style="font-weight:800">Full Stack Developer</h5>
+                <small style="color:var(--muted)">ICS · Computer Science</small>
+              </div>
+              <div class="code-snippet">
+                <span class="c-key">const</span> <span class="c-obj">developer</span> = {<br>
+                &nbsp;&nbsp;<span class="c-val">education</span>: <span class="c-str">"ICS, Computer Science"</span>,<br>
+                &nbsp;&nbsp;<span class="c-val">stack</span>: <span class="c-str">["PHP","Laravel","JavaScript","Bootstrap"]</span>,<br>
+                &nbsp;&nbsp;<span class="c-val">expertise</span>: <span class="c-str">["Shopify","WordPress","Ecommerce"]</span>,<br>
+                &nbsp;&nbsp;<span class="c-val">status</span>: <span class="c-str">"Open to Work"</span><br>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 reveal-left">
+          <div class="section-tag"><i class="fa-solid fa-user"></i> About Me</div>
+          <h2 class="section-title mb-4">Passionate about <span>code &amp; collaboration</span></h2>
+          <p style="color:var(--muted);line-height:1.8;font-size:.95rem">I am Muhammad AbdulRehman, a Full Stack Developer
+            and Ecommerce Expert with a background in
+            Computer Science (ICS). Solving real-world problems through technology is my passion.</p>
+          <p style="color:var(--muted);line-height:1.8;font-size:.95rem;margin-top:16px">I specialize in building and
+            customizing Shopify and WordPress stores, with strong hands-on experience in PHP, Laravel, JavaScript and
+            Bootstrap. I am committed to delivering high-quality work and building long-term partnerships with my
+            clients.
+          </p>
+          <div class="hero-actions mt-4"><a target="_blank" href="assets/Muhammad_AbdulRehman_CV.pdf"
+              class="btn-primary-custom" style="font-size:.85rem;padding:12px 24px"><i class="fa-solid fa-download"></i>
+              Download CV</a></div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div class="about-card">
+            <div class="about-grid">
+              <div class="about-item">
+                <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <h6>Education</h6>
+                  <p>ICS (Computer Science) — Govt Degree College, BWN</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <div class="about-icon" style="background:linear-gradient(135deg,var(--secondary),#f857a6)"><i
+                    class="fa-solid fa-code"></i></div>
+                <div>
+                  <h6>Full Stack Developer</h6>
+                  <p>PHP, JavaScript, Bootstrap &amp; Laravel</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <div class="about-icon" style="background:linear-gradient(135deg,var(--accent),#38f9d7)"><i
+                    class="fa-solid fa-cart-shopping"></i></div>
+                <div>
+                  <h6>Ecommerce Expert</h6>
+                  <p>Shopify stores &amp; secure payment integration</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <div class="about-icon" style="background:linear-gradient(135deg,#f7971e,#ffd200)"><i
+                    class="fa-solid fa-certificate"></i></div>
+                <div>
+                  <h6>25+ Projects Delivered</h6>
+                  <p>2+ years of active development experience</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 ps-2">
+              <h6 class="mb-3" style="font-weight:700">Journey So Far</h6>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-date">2020 – Present</div>
+                  <div class="timeline-title">Full-Stack Web Development</div>
+                  <div class="timeline-desc">Built 25–30 responsive websites and e-commerce platforms with secure payment gateways (Stripe, PayPal).</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">2023 – 2024</div>
+                  <div class="timeline-title">Amazon Content Writer — Ecom Pearls</div>
+                  <div class="timeline-desc">Wrote keyword-optimized product titles and listings to improve search visibility and ranking.</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">2022 – 2024</div>
+                  <div class="timeline-title">ICS (Computer Science) — Govt Degree College, BWN</div>
+                  <div class="timeline-desc">Built foundation in computer science concepts and programming.</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-date">2020 – 2022</div>
+                  <div class="timeline-title">Matriculation (Computer Science) — GHS Aziz-e-Millit, Bahawalnagar</div>
+                  <div class="timeline-desc">Completed secondary education with a focus on computer science.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-tag justify-content-center"><i class="fa-solid fa-layer-group"></i> Technical Expertise
+        </div>
+        <h2 class="section-title">My <span>Skills &amp; Stack</span></h2>
+      </div>
+      <div class="row g-4 mb-4">
+        <div class="col-md-4 reveal">
+          <div class="skill-category">
+            <div class="skill-cat-title"><i class="fa-solid fa-laptop-code"></i> Frontend</div>
+            <div class="skill-chip"><i class="fa-brands fa-html5" style="color:#e34f26"></i> HTML5</div>
+            <div class="skill-chip"><i class="fa-brands fa-css3-alt" style="color:#1572b6"></i> CSS3</div>
+            <div class="skill-chip"><i class="fa-brands fa-js" style="color:#f7df1e"></i> JavaScript</div>
+            <div class="skill-chip"><i class="fa-brands fa-bootstrap" style="color:#7952b3"></i> Bootstrap</div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" style="transition-delay:.1s">
+          <div class="skill-category">
+            <div class="skill-cat-title"><i class="fa-solid fa-server"></i> Backend</div>
+            <div class="skill-chip"><i class="fa-brands fa-php" style="color:#777bb4"></i> PHP</div>
+            <div class="skill-chip"><i class="fa-solid fa-database" style="color:#f29111"></i> MySQLi</div>
+            <div class="skill-chip"><i class="fa-solid fa-bolt"></i> Laravel</div>
+            <div class="skill-chip"><i class="fa-solid fa-git" style="color:#bb3118"></i> Git</div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" style="transition-delay:.2s">
+          <div class="skill-category">
+            <div class="skill-cat-title"><i class="fa-solid fa-cart-shopping"></i> Ecommerce &amp; Amazon</div>
+            <div class="skill-chip"><i class="fa-solid fa-store" style="color:#22c55e"></i> Shopify</div>
+            <div class="skill-chip"><i class="fa-brands fa-wordpress" style="color:#21759b"></i> WordPress</div>
+            <div class="skill-chip"><i class="fa-brands fa-amazon" style="color:#ff9900"></i> Amazon Optimization</div>
+            <div class="skill-chip"><i class="fa-solid fa-credit-card" style="color:#0070ba"></i> Stripe / PayPal</div>
+            <div class="skill-chip"><i class="fa-solid fa-magnifying-glass" style="color:#ec4899"></i> Keyword Research</div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-6 reveal">
+          <div class="progress-bar-custom">
+            <h6 style="font-weight:700;margin-bottom:24px">Proficiency Level</h6>
+            <div class="progress-item">
+              <div class="progress-head"><span>Full-Stack Development</span><span>90%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-head"><span>PHP &amp; Laravel</span><span>85%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-head"><span>Shopify / Ecommerce</span><span>88%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-head"><span>Amazon Listing Optimization</span><span>80%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-head"><span>Digital Marketing</span><span>78%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="78"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal" style="transition-delay:.1s">
+          <div class="progress-bar-custom">
+            <h6 style="font-weight:700;margin-bottom:24px">Tools &amp; Platforms</h6>
+            <div class="progress-item">
+              <div class="progress-head"><span>VS Code / Git / GitHub</span><span>90%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-head"><span>WordPress / CMS</span><span>85%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-head"><span>MySQL / phpMyAdmin</span><span>82%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-head"><span>Payment Gateway Integration</span><span>78%</span></div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="78"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-tag justify-content-center"><i class="fa-solid fa-briefcase"></i> What I Offer</div>
+        <h2 class="section-title">My <span>Services</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h5 class="mb-3">Full-Stack Development</h5>
+            <p>Custom websites & web apps built with modern stacks — responsive, fast, production-ready.</p>
+            <div class="service-tags"><span class="stag">PHP</span><span class="stag">Laravel</span><span
+                class="stag">JavaScript</span><span class="stag">Bootstrap</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.1s">
+          <div class="service-card">
+            <div class="service-icon" style="background:linear-gradient(135deg,var(--accent),#38f9d7)"><i
+                class="fa-solid fa-chart-bar"></i></div>
+            <h5 class="mb-3">Digital Marketing</h5>
+            <p>Keyword research and content strategy to boost product visibility, ranking and sales.</p>
+            <div class="service-tags"><span class="stag">SEO</span><span class="stag">Keyword Research</span><span
+                class="stag">Content Strategy</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.2s">
+          <div class="service-card">
+            <div class="service-icon" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"><i
+                class="fa-solid fa-shop"></i></div>
+            <h5 class="mb-3">E-Commerce Solutions</h5>
+            <p>Full-featured stores with secure payment gateways, inventory management & marketing funnels.</p>
+            <div class="service-tags"><span class="stag">Shopify</span><span class="stag">WordPress</span><span
+                class="stag">Stripe / PayPal</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.15s">
+          <div class="service-card">
+            <div class="service-icon" style="background:linear-gradient(135deg,#f7971e,#ffd200)"><i
+                class="fa-solid fa-cart-shopping"></i></div>
+            <h5 class="mb-3">Amazon Optimization</h5>
+            <p>Keyword-optimized listings, product titles and PPC strategy to improve ranking and sales.</p>
+            <div class="service-tags"><span class="stag">Listings</span><span class="stag">PPC</span><span
+                class="stag">Inventory</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-tag justify-content-center"><i class="fa-solid fa-folder-open"></i> Recent Work</div>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.05s">
+          <a href="https://mabdulrehmandev.github.io/ecommerce/" target="_blank">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="assets/images/ecommerce-store-thumbnail.png" alt="">
+              </div>
+              <div class="project-body">
+                <h5 class="mb-2">E-Commerce Store</h5>
+                <p>Full storefront with product catalog, cart, checkout flow & order history — built with HTML, CSS & JavaScript.</p>
+                <div class="project-links"><a target="_blank" href="https://mabdulrehmandev.github.io/ecommerce/"
+                    class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a target="_blank" href="https://github.com/mabdulrehmandev/ecommerce" class="plink"><i
+                      class="fa-brands fa-github"></i> Code</a></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.1s">
+          <a href="https://mabdulrehmandev.github.io/hms/" target="_blank">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="assets/images/hms-thumbnail.png" alt="">
+              </div>
+              <div class="project-body">
+                <h5 class="mb-2">Hospital Management System</h5>
+                <p>Appointment booking dashboard with doctor scheduling, patient records & real-time status updates.</p>
+                <div class="project-links"><a target="_blank" href="https://mabdulrehmandev.github.io/hms/"
+                    class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a target="_blank" href="https://github.com/mabdulrehmandev/hms" class="plink"><i
+                      class="fa-brands fa-github"></i> Code</a></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.15s">
+          <a href="https://mabdulrehmandev.github.io/inventory/" target="_blank">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="assets/images/inventory-system-thumbnail.png" alt="">
+              </div>
+              <div class="project-body">
+                <h5 class="mb-2">Inventory Management System</h5>
+                <p>Stock tracking system with add/edit/delete items, low-stock alerts & live search.</p>
+                <div class="project-links"><a target="_blank" href="https://mabdulrehmandev.github.io/inventory/"
+                    class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a target="_blank" href="https://github.com/mabdulrehmandev/inventory" class="plink"><i
+                      class="fa-brands fa-github"></i> Code</a></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.2s">
+          <a href="https://mabdulrehmandev.github.io/admin-dashoard/" target="_blank">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="assets/images/admin-dashboard-thumbnail.png" alt="">
+              </div>
+              <div class="project-body">
+                <h5 class="mb-2">Analytics Admin Dashboard</h5>
+                <p>Revenue & order analytics dashboard with live charts, sortable tables & CSV export.</p>
+                <div class="project-links"><a target="_blank" href="https://mabdulrehmandev.github.io/admin-dashoard/"
+                    class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a target="_blank" href="https://github.com/mabdulrehmandev/admin-dashoard" class="plink"><i
+                      class="fa-brands fa-github"></i> Code</a></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.25s">
+          <a href="https://mabdulrehmandev.github.io/socialfinder/" target="_blank">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="assets/images/socialfinder-thumbnail.png" alt="">
+              </div>
+              <div class="project-body">
+                <h5 class="mb-2">SocialFinder — Profile Lookup</h5>
+                <p>API-powered tool that fetches real-time profile data from GitHub & Reddit using their public APIs.</p>
+                <div class="project-links"><a target="_blank" href="https://mabdulrehmandev.github.io/socialfinder/"
+                    class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a target="_blank" href="https://github.com/mabdulrehmandev/socialfinder" class="plink"><i
+                      class="fa-brands fa-github"></i> Code</a></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.3s">
+          <a href="https://mabdulrehmandev.github.io/devfinder/" target="_blank">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="assets/images/devfinder-thumbnail.png" alt="">
+              </div>
+              <div class="project-body">
+                <h5 class="mb-2">DevFinder — GitHub Lookup</h5>
+                <p>API-powered tool that fetches real-time GitHub profile data — repos, followers & bio — for any username.</p>
+                <div class="project-links"><a target="_blank" href="https://mabdulrehmandev.github.io/devfinder/"
+                    class="plink filled"><i class="fa-solid fa-eye"></i> Live</a><a target="_blank" href="https://github.com/mabdulrehmandev/devfinder" class="plink"><i
+                      class="fa-brands fa-github"></i> Code</a></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-tag justify-content-center"><i class="fa-solid fa-briefcase"></i> Professional Journey</div>
+        <h2 class="section-title">My <span>Experience</span></h2>
+        <p style="color:var(--muted);max-width:480px;margin:16px auto 0;font-size:.9rem;line-height:1.7">Real-world
+          roles where I apply my skills, collaborate with teams, and create meaningful impact.</p>
+      </div>
+      <div class="exp-timeline">
+
+        <!-- Experience 1: Web Development -->
+        <div class="exp-card reveal">
+          <div class="exp-left">
+            <div class="exp-icon-wrap"
+              style="background:linear-gradient(135deg,rgba(108,99,255,.2),rgba(255,101,132,.15))">
+              <i class="fa-solid fa-code" style="color:var(--primary)"></i>
+            </div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-badge active-badge"><span class="pulse-dot"></span> Active</span>
+              <span class="exp-date"><i class="fa-regular fa-calendar"></i> 2020 – Present</span>
+            </div>
+            <h4 class="exp-title">Full Stack Web Developer</h4>
+            <div class="exp-company"><i class="fa-solid fa-building" style="color:var(--primary)"></i> Freelance
+            </div>
+            <p class="exp-desc">Building responsive, full-stack websites and e-commerce platforms with secure payment
+              integration (Stripe, PayPal). Delivered 25–30 live projects, writing clean, efficient code while
+              ensuring cross-browser compatibility and mobile responsiveness.</p>
+            <div class="exp-tags">
+              <span class="exp-tag"><i class="fa-solid fa-code"></i> PHP / Laravel</span>
+              <span class="exp-tag"><i class="fa-solid fa-cart-shopping"></i> E-Commerce</span>
+              <span class="exp-tag"><i class="fa-solid fa-store"></i> Shopify</span>
+              <span class="exp-tag"><i class="fa-solid fa-bug"></i> Bug Fixing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: Amazon Content Writer -->
+        <div class="exp-card reveal" style="transition-delay:.15s">
+          <div class="exp-left">
+            <div class="exp-icon-wrap"
+              style="background:linear-gradient(135deg,rgba(67,233,123,.2),rgba(56,249,215,.15))">
+              <i class="fa-solid fa-pen-nib" style="color:var(--accent)"></i>
+            </div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-date"><i class="fa-regular fa-calendar"></i> 2023 – 2024</span>
+            </div>
+            <h4 class="exp-title">Amazon Content Writer</h4>
+            <div class="exp-company"><i class="fa-solid fa-building" style="color:var(--accent)"></i> Ecom Pearls </div>
+            <p class="exp-desc">Created concise, keyword-optimized product titles and bullet points to enhance search
+              visibility. Performed in-depth keyword research to strategically integrate high-impact search terms,
+              improving product ranking and discoverability.</p>
+            <div class="exp-tags">
+              <span class="exp-tag"><i class="fa-solid fa-magnifying-glass"></i> Keyword Research</span>
+              <span class="exp-tag"><i class="fa-solid fa-tag"></i> Product Listings</span>
+              <span class="exp-tag"><i class="fa-solid fa-chart-line"></i> Ranking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== END EXPERIENCE SECTION ===== -->
+
+  <section id="values">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-tag justify-content-center"><i class="fa-solid fa-heart"></i> Work Philosophy</div>
+        <h2 class="section-title">What I <span>Stand For</span></h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="value-card">
+            <div class="value-icon"><i class="fa-solid fa-star"></i></div>
+            <h5 class="mb-3">Quality First</h5>
+            <p>Every deliverable is crafted with meticulous attention to detail. Good enough is never enough.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.1s">
+          <div class="value-card">
+            <div class="value-icon" style="background:linear-gradient(135deg,rgba(255,101,132,.2),rgba(255,157,87,.2))">
+              <i class="fa-solid fa-comments" style="color:var(--secondary)"></i>
+            </div>
+            <h5 class="mb-3">Clear Communication</h5>
+            <p>Transparent updates and honest timelines — you always know where your project stands.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.2s">
+          <div class="value-card">
+            <div class="value-icon" style="background:linear-gradient(135deg,rgba(67,233,123,.2),rgba(56,249,215,.2))">
+              <i class="fa-solid fa-handshake" style="color:var(--accent)"></i>
+            </div>
+            <h5 class="mb-3">Long-Term Partnership</h5>
+            <p>I don't just complete projects — I build relationships. Your success is my success.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 reveal">
+        <a target="_blank" href="https://www.fiverr.com/mabdurrehman347" class="btn-primary-custom"
+          style="display:inline-flex;border:none">
+          <i class="fa-brands fa-fiverr"></i> View My Fiverr Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-tag justify-content-center"><i class="fa-solid fa-envelope"></i> Get In Touch</div>
+        <h2 class="section-title">Let's <span>Work Together</span></h2>
+        <p style="color:var(--muted);max-width:480px;margin:16px auto 0;font-size:.9rem;line-height:1.7">Have a project
+          in mind? Let's discuss how I can help you achieve your goals.</p>
+      </div>
+      <div class="contact-wrap reveal">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <h4 style="font-weight:800;margin-bottom:8px">Ready to start?</h4>
+            <p style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:32px">Website, e-commerce
+              store, or Amazon listing optimization — I deliver results.</p>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-value"><a href="mailto:mabdurrehman347@gmail.com">mabdurrehman347@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fa-brands fa-whatsapp" style="color:#25d366"></i></div>
+              <div>
+                <div class="ci-label">WhatsApp</div>
+                <div class="ci-value">+92 305-5419058</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot" style="color:var(--secondary)"></i></div>
+              <div>
+                <div class="ci-label">Location</div>
+                <div class="ci-value">Bahawalnagar, Punjab, Pakistan</div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a target="_blank" href="https://github.com/mabdulrehmandev" class="slink"><i
+                  class="fa-brands fa-github"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/muhammad-abdurrehman-8b8b092ba" class="slink"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+              <a target="_blank" href="https://www.facebook.com/AbdurRehmanDeveloper" class="slink"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a target="_blank" href="https://wa.me/923055419058" class="slink"><i
+                  class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control-custom" placeholder="Your Name" /></div>
+              <div class="col-md-6"><input type="email" class="form-control-custom" placeholder="Your Email" /></div>
+              <div class="col-12"><input type="text" class="form-control-custom" placeholder="Subject" /></div>
+              <div class="col-12"><select class="form-control-custom" style="appearance:none;cursor:pointer">
+                  <option value="" disabled selected>Service Needed</option>
+                  <option>Full-Stack Web Development</option>
+                  <option>E-Commerce Solution</option>
+                  <option>Amazon Optimization</option>
+                  <option>Digital Marketing</option>
+                </select></div>
+              <div class="col-12"><textarea class="form-control-custom"
+                  placeholder="Tell me about your project..."></textarea></div>
+              <div class="col-12"><button class="btn-primary-custom w-100 justify-content-center" id="sendBtn"
+                  style="border:none"><i class="fa-solid fa-paper-plane"></i> Send Message</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p style="margin-bottom:8px"><span
+          style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Muhammad AbdulRehman
+          </span>
+      </p>
+      <p>Designed &amp; Built with <span style="color:var(--secondary)"><i class="fa-solid fa-heart"
+            style="font-size:.8rem"></i></span> Full Stack Developer</p>
+      <p style="margin-top:6px;font-size:.75rem">© 2026 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <a href="#hero" class="scroll-top" id="scrollTop"><i class="fa-solid fa-chevron-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
